@@ -47,6 +47,9 @@ SLIDES_LIMIT = "xxxxx"   # 生成PPT页数的上限，不设置默认为10
 
 
 ## 使用方法
+- 配置PPT模版文件
+
+在Bot目录下的data文件夹里面新建nonebot-plugin-chatppt文件夹。把PPT主题模版文件放进里面，并更名为theme.pptx
 
 - 生成PPT
 ```
