@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "nonebot-plugin-chatppt"
+version = "0.0.1"
+description = "A nonebot plugin for generating PPT slides from ChatGPT"
+authors = ["Alpaca <alpaca@bupt.edu.cn>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = "^2.0.0rc3"
+nonebot-adapter-onebot = "^2.2.1"
+openai = "^0.27.1"
+python-pptx = "^0.6.21"
+icrawler = "^0.6.6"
+
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true 
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
