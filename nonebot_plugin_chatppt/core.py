@@ -44,13 +44,11 @@ class PrefixNameDownloader(ImageDownloader):
         return 'prefix_' + bad_coding_practice + filename
 
 
-async def generate_ppt(topic, slide_length, user_id: str):
+async def generate_ppt(file_path, topic, slide_length, user_id: str):
     folder = Path() / "data" / "nonebot-plugin-chatppt" / "caches" / user_id
     folder.mkdir(parents=True, exist_ok=True)
 
-    root = Presentation("./data/nonebot-plugin-chatppt/theme.pptx")
-
-    print(str(folder))
+    root = Presentation(file_path)
 
     message = f"""
     Create content for a slideshow presentation.

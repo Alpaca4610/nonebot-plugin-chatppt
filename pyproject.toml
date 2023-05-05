@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-chatppt"
-version = "0.1.0"
+version = "0.1.1"
 description = "A nonebot plugin for generating PPT slides from ChatGPT"
 authors = ["Alpaca <alpaca@bupt.edu.cn>"]
 license = "MIT"
